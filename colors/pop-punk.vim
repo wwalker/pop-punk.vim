@@ -161,9 +161,9 @@ call s:h('Underlined', s:blue, s:none, [s:attrs.underline])
 call s:h('Todo', s:orange, s:black)
 
 call s:h('Error', s:red_2, s:none)
-call s:h('SpellBad', s:none, s:none, [s:attrs.undercurl], s:red_2)
+call s:h('SpellBad', s:red_2, s:none, [s:attrs.undercurl], s:red_2)
 " call s:h('SpellLocal', s:none, s:none, [s:attrs.undercurl], s:red_2)
-call s:h('SpellCap', s:none, s:none, [s:attrs.undercurl], s:yellow)
+call s:h('SpellCap', s:yellow, s:none, [s:attrs.undercurl], s:yellow)
 " call s:h('SpellRare', s:none, s:none)
 
 call s:h('Constant', s:red_2, s:none)
