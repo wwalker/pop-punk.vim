@@ -130,13 +130,13 @@ call s:h('FoldColumn', s:gray_1, s:gray_6, [s:attrs.italic])
 call s:h('Folded', s:gray_1, s:gray_6, [s:attrs.italic])
 call s:h('IncSearch', s:white, s:blue)
 call s:h('LineNr', s:gray_6, s:black)
-" call s:h('MoreMsg', s:gray_6, s:black)
-call s:h('NonText', s:yellow, s:none)
+call s:h('MoreMsg', s:pink, s:gray_2)
+call s:h('NonText', s:gray_2, s:none)
 call s:h('Pmenu', s:white, s:gray_2)
 call s:h('PmenuSbar', s:none, s:gray_2)
 call s:h('PmenuSel', s:white, s:red_1)
 call s:h('PmenuThumb', s:none, s:cobalt_1)
-" call s:h('Question', s:none, s:gray_6)
+call s:h('Question', s:pink, s:gray_2)
 call s:h('Search', s:white, s:blue)
 call s:h('SignColumn', s:gray_1, s:black)
 call s:h('TabLine', s:magenta, s:gray_2)
@@ -146,7 +146,7 @@ call s:h('Title', s:white, s:none)
 call s:h('VertSplit', s:magenta, s:black)
 call s:h('Visual', s:gray_1, s:mauve)
 " call s:h('VisualNOS', s:gray_1, s:mauve)
-call s:h('WarningMsg', s:gray_1, s:yellow)
+call s:h('WarningMsg', s:yellow, s:black)
 
 " Syntax
 
@@ -157,7 +157,7 @@ call s:h('MatchParen', s:white, s:blue)
 call s:h('SpecialKey', s:sun, s:none)
 
 call s:h('Comment', s:blue, s:none, [s:attrs.italic])
-" call s:h('Underlined', s:blue, s:none, [s:attrs.italic])
+call s:h('Underlined', s:blue, s:none, [s:attrs.underline])
 call s:h('Todo', s:orange, s:black)
 
 call s:h('Error', s:red_2, s:none)
@@ -202,7 +202,12 @@ call s:h('Special', s:magenta, s:none, [s:attrs.bold])
 call s:h('SpecialComment', s:blue, s:none, [s:attrs.bold])
 call s:h('Tag', s:orange, s:none)
 
+" netrw
+call s:h('netrwTreeBar', s:blue, s:none)
+call s:h('netrwDir', s:magenta, s:none)
+call s:h('netrwClassify', s:orange, s:none)
 
+" vim-ale, coc.nvim
 call s:h('ALEErrorSign', s:red_2, s:none)
 call s:h('ALEWarningSign', s:yellow, s:none)
 hi! link CocErrorSign ALEErrorSign
@@ -210,6 +215,9 @@ hi! link CocWarningSign ALEWarningSign
 hi! link CocInfoSign ALEWarningSign
 call s:h('CocErrorFloat', s:red_2, s:none, [s:attrs.bold])
 call s:h('CocWarningFloat', s:orange, s:none, [s:attrs.bold])
+
+" you-are-here.vim
+call s:h('YouAreHereActiveBorder', s:magenta, s:gray_2)
 
 hi default CocUnderline cterm=undercurl gui=undercurl
 
